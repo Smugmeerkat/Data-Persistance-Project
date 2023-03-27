@@ -32,6 +32,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ResetHighScore()
+    {
+        highScore = 0;
+        highScoreUser = "";
+        SaveScore();
+        LoadScore();
+    }
+
     [System.Serializable]
     class SaveData
     {
